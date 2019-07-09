@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Art by Gibby</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" id="secondary-nav">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-transparent.png" alt="Gibby Logo" width="104" height="83"
+                    class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mt-2 mt-lg-0 d-flex justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-section" class="py-5">
+        <div class="row">
+            <div class="col about-image ">
+                <img src="img/gibby-popcorn.png" height=168 class="image-fluid" style="transform: scaleX(-1);">
+            </div>
+            <div class="container about-content">
+                <div class="col-8 text-center">
+                    <h2 class="display-4 text-center">My name is Jamal Gibson.</h2>
+                    <h3>Animator. Graphic Designer. Illustrator.</h3>
+                </div>
+                <p class="text-wrap">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias debitis accusantium
+                    praesentium quia ipsam nobis molestiae odio qui eveniet dolorem quidem ipsa, sit consectetur,
+                    voluptatibus numquam? Eos aspernatur officia quisquam laborum harum, sint cupiditate consequatur
+                    culpa, odit repellendus voluptatum natus veniam assumenda praesentium beatae iste nostrum eum
+                    impedit. Labore reiciendis rerum dolorum eaque debitis impedit nostrum harum repellat voluptate
+                    magni, necessitatibus dolore molestias numquam placeat? Sed eveniet laudantium ipsam rerum deleniti
+                    excepturi omnis quae perferendis alias, porro quam, consectetur mollitia illum ipsa non amet
+                    repellendus corrupti, obcaecati optio vitae sit placeat! Non temporibus quia id obcaecati eligendi
+                    minus sunt, laudantium beatae consectetur atque aut fuga consequuntur quo magnam accusantium
+                    inventore. Similique repellat libero sed voluptatibus qui quos amet ullam?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <!-- <h3>Art by Gibby</h3> -->
+                    <p>Copyright &copy; <span id=year></span> Jamal Gibson
+                        <br> Site Design: <a href="https://www.the4upz.com/" target="_blank" class="text-danger">Arik
+                            Stewart</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>

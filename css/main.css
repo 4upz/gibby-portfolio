@@ -1,0 +1,36 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+
+#intro {
+  position: relative;
+  width: 100%;
+  max-height: 50%;
+}
+
+#intro h1 {
+  font-size: 8rem;
+}
+
+#secondary-nav {
+  font-size: 3rem;
+}
+
+.about-image,
+#about-section .about-content {
+  padding-top: 100px;
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
