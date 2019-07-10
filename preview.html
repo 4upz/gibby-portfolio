@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="container content-align-center">
+    <div id="preview-content" class="container content-align-center">
         <div class="container">
             <div class="row">
                 <h1 class="div display-1 mx-auto">
@@ -25,10 +25,10 @@
             </div>
         </div>
         <div class="row">
-            <img src="img/gibby-no.png" height="400px" alt="" class="mx-auto">
+            <img src="img/gibby-no.png" height="300rem" alt="" class="mx-auto">
         </div>
         <div class="row">
-            <h2 class="display-2 mx-auto">It's not ready yet!</h2>
+            <h2 class="display-2 mx-auto text-center">It's not ready yet!</h2>
         </div>
     </div>
 
@@ -36,7 +36,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <p class="text-mute mx-auto">Need a design and can't wait?</p>
+                <p class="text-mute mx-auto text-center">Need a design and can't wait?</p>
             </div>
             <div class="row">
                 <button type="button" class="btn btn-lg btn-danger mx-auto" data-toggle="modal"
@@ -78,6 +78,19 @@
         </div>
     </div>
 
+    <footer class="bg-dark mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mt-2 text-center text-light">
+                    <!-- <h3>Art by Gibby</h3> -->
+                    <p class="footer-copyright">Copyright &copy; <span id=year></span> Jamal Gibson </p>
+                    <p class="font-small"> Site Design: <a href="https://www.the4upz.com/" target="_blank" class="text-danger">Arik
+                            Stewart</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -89,6 +102,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
     <!-- Get the current year for the copyright -->
     <script>
         $('#year').text(new Date().getFullYear());
