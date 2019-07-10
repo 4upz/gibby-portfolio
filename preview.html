@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Coming Soon</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+
+<body>
+
+    <div class="container content-align-center">
+        <div class="container">
+            <div class="row">
+                <h1 class="div display-1 mx-auto">
+                    WAIT!
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <img src="img/gibby-no.png" height="400px" alt="" class="mx-auto">
+        </div>
+        <div class="row">
+            <h2 class="display-2 mx-auto">It's not ready yet!</h2>
+        </div>
+    </div>
+
+    <!-- Add contact info here -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <p class="text-mute mx-auto">Need a design and can't wait?</p>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-lg btn-danger mx-auto" data-toggle="modal"
+                    data-target="#contactModal">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <div class="modal-title text-light">Contact Me</div>
+                    <button class="close text-light" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Get the current year for the copyright -->
+    <script>
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>
