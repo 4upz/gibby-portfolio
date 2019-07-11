@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <img src="img/gibby-no.png" height="300rem" alt="" class="mx-auto">
+            <img src="img/gibby-no.png" height="325rem" alt="" class="mx-auto">
         </div>
         <div class="row">
             <h2 class="display-2 mx-auto text-center">It's not ready yet!</h2>
@@ -49,25 +49,39 @@
     <div class="modal fade text-dark" id="contactModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header bg-danger">
-                    <div class="modal-title text-light">Contact Me</div>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <strong>Email Me:</strong> jamalgibbygibson@gmail.com </div>
                     <button class="close text-light" data-dismiss="modal">
                         <span>&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls"></div>
+
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="First and Last"  required="required" data-error="Name is required.">
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control">
+                            <input type="email" class="form-control" placeholder="Your Email Address"  required="required" data-error="Email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" placeholder="Message Subject"  required="required" data-error="Subject is required.">
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control"></textarea>
+                            <textarea class="form-control" placeholder="Your Message For Me"></textarea  required="required" data-error="Please, leave a message.">
+                            <div class="help-block with-errors"></div>
                         </div>
                     </form>
                 </div>
@@ -78,13 +92,14 @@
         </div>
     </div>
 
-    <footer class="bg-dark mt-2">
+    <footer class="bg-light mt-2">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 mt-2 text-center text-light">
+                <div class="col-sm-12 text-center">
                     <!-- <h3>Art by Gibby</h3> -->
-                    <p class="footer-copyright">Copyright &copy; <span id=year></span> Jamal Gibson </p>
-                    <p class="font-small"> Site Design: <a href="https://www.the4upz.com/" target="_blank" class="text-danger">Arik
+                    <p class="footer-copyright pt-2 mb-0">Copyright &copy; <span id=year></span> Jamal Gibson </p>
+                    <p class="text-muted"> Site Design: <a href="https://www.the4upz.com/" target="_blank"
+                            class="text-danger">Arik
                             Stewart</a></p>
                 </div>
             </div>
@@ -102,6 +117,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!-- Additional Javascript for Contact Form: Bootstrap Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+        integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
 
     <!-- Get the current year for the copyright -->
     <script>
