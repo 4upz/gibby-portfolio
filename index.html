@@ -1,87 +1,158 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <title>Art by Gibby</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- fontawesome css -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <!-- Main css -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Design by Gibby: Coming Soon</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/landing.css">
+  <!-- FontAwesome Kit Link -->
+  <script src="https://kit.fontawesome.com/2dba71d507.js"></script>
 </head>
 
 <body>
+  <div id="preview-content" class="container content-align-center">
+    <div class="container">
+      <div class="row">
+        <h1 class="div display-1 mx-auto"> WAIT! </h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <img src="img/gibby-no.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2 class="display-2 mx-auto text-center">It's not ready yet!</h2>
+      </div>
+    </div>
+  </div>
 
-    <!-- LANDING SECTION -->
-    <header id="intro" class="view">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col my-auto">
-                    <br> <br> <br><br>
-                    <h1 class=" display-1 font-weight-bold text-uppercase text-center">Art</h1>
-                </div>
-                <div class="col my-auto">
-                    <!-- Need to make the image the background -->
-                    <img class="img" src="img/gibby-lines-transparent.png" alt="Gibby Logo">
-                </div>
-                <div class="col my-auto">
-                    <h2 class="display-4">by:</h2>
-                    <h1 class=" display-1 font-weight-bold text-uppercase center-block text-center">Gibby</h1>
-                </div>
+  <!-- Add contact info here -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <p class="text-mute mx-auto text-center">Need a design and can't wait?</p>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-lg btn-danger mx-auto" data-toggle="modal"
+          data-target="#contactModal">Contact Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title mx-auto">
+            <h4><i class="fas fa-envelope text-danger"></i> jamalgibbygibson@gmail.com</h4>
+          </div>
+          <button class="close text-light" data-dismiss="modal">
+            <span>×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contact form delivered via formspree.io -->
+          <form id="contactform" method="POST" name="contact-form" data-toggle="validator" role="form">
+
+            <div class="messages"></div>
+            <div class="controls"></div>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" placeholder="First and Last" required="required"
+                data-error="Name is required.">
+              <div class="help-block with-errors text-danger"></div>
             </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="_replyto" class="form-control" placeholder="Your Email Address"
+                required="required" data-error="Email is required.">
+              <div class="help-block with-errors text-danger"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" name="_subject" class="form-control" placeholder="Message Subject" required="required"
+                data-error="Subject is required.">
+              <div class="help-block with-errors text-danger"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" name="message" placeholder="Your Message For Me"
+                data-error="There has to be something you want."></textarea>
+              <div class="help-block with-errors text-danger"></div>
+            </div>
+
+            <!-- To keep out those pesky spambots with the HoneyPot Method -->
+            <input type="text" name="_gotcha" style="display:none">
+          </form>
         </div>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-bottom" id="main-nav">
-        <!-- <a class="navbar-brand" href="#">
-            <img src="img/logo-transparent.png" alt="Gibby Logo" width="104" height="83" class="d-inline-block align-top">
-        </a> -->
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav m-auto mt-2 mt-lg-0 d-flex justify-content-between">
-                <li class="nav-item px-5">
-                    <a class="nav-link display-4" href="about.html">About</a>
-                </li>
-                <li class="nav-item px-5">
-                    <a class="nav-link display-4" href="preview.html">Portfolio</a>
-                </li>
-                <li class="nav-item px-5">
-                    <a class="nav-link display-4" href="#">Contact</a>
-                </li>
-            </ul>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-submit btn-danger btn-send mx-auto" data-disable="true">Submit</button>
         </div>
-    </nav>
+        <p class="text-muted text-center"> I'll get back to you as soon as possible! </p>
 
-    <footer>
+        <!-- Set email here (hides from spambots) -->
+        <script>
+          var contactform = document.getElementById('contactform');
+          contactform.setAttribute('action', '//formspree.io/' + 'ams382' + '@' + 'case' + '.' + 'edu');
+          // Add additional script here to show confirmation that email has been sent
+        </script>
 
-    </footer>
+      </div>
+    </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <!-- FOOTER SECTION -->
+  <footer id="footer" class="bg-light mt-3">
+    <div class="container text-center">
+      <!-- <h3>Art by Gibby</h3> -->
+      <p class="footer-copyright">Copyright © <span id="year"></span> Jamal Gibson </p>
+      <p class="text-muted"> Site Design: 
+        <a href="https://www.the4upz.com/" target="_blank" id="arik-link">Arik
+          Stewart</a></p>
+      <!-- Social Media Links -->
+      <div class="text-center center-block">
+        <a href="https://www.instagram.com/_xgibbyx_/" target="_blank"><i id="social-ig"
+            class="fab fa-instagram fa-2x social mx-1"></i></a>
+        <a href="https://twitter.com/Jamal_Gibby" target="_blank"><i id="social-tw"
+            class="fab fa-twitter fa-2x social mx-1"></i></a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        //Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
-    </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Additional Javascript for Contact Form: Bootstrap Validator -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+  <!-- Get the current year for the copyright -->
+  <script>
+    $('#year').text(new Date().getFullYear());
+  </script>
+
 </body>
 
 </html>
