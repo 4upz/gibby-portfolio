@@ -12,24 +12,28 @@ html {
 #intro {
   position: relative;
   width: 100%;
-  max-height: 50%;
+  /* max-height: 50%; */
+  height: 100vh;
+}
+
+#intro-content {
+  height: 100vh;
 }
 
 #intro h1 {
   font-size: 8rem;
 }
 
-#secondary-nav {
-  font-size: 3rem;
-}
-
-.about-image,
-#about-section .about-content {
-  padding-top: 100px;
+#intro-img {
+  height: 100%;
 }
 
 #main-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+#about-img {
+  height: 30%;
 }
